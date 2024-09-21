@@ -1,0 +1,18 @@
+* {
+  box-sizing: border-box;
+
+  margin: 0;
+  font-family: 'Montserrat';
+}
+
+.slide .selected.legend {
+  padding: 20px;
+}
+
+.carousel ul {
+  bottom: 20px;
+}
+
+.carousel .slide .slLegend {
+  font-size: large;
+}

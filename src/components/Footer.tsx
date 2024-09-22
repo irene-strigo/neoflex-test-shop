@@ -31,13 +31,13 @@ const Footer = () => {
       </FooterLinks>
       <FooterLinks>
         <div>
-          <FooterContacts href="/favorites">
+          <FooterContacts href="https://vk.com">
             <FooterIcon src="/assets/Icons/VK.svg" />
           </FooterContacts>
-          <FooterContacts href="/favorites">
+          <FooterContacts href="https://telegram.org">
             <FooterIcon src="/assets/Icons/Telegram.svg" />
           </FooterContacts>
-          <FooterContacts href="/favorites">
+          <FooterContacts href="https://whatsapp.com">
             <FooterIcon src="/assets/Icons/Whatsapp.svg" />
           </FooterContacts>
         </div>

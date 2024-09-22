@@ -29,6 +29,12 @@ export const MainContentWrapper = styled.div`
   justify-content: center;
   max-width: 1110px;
   gap: 15px;
-  margin: 5px auto;
+  margin: 20px auto;
   align-items: center;
+  @media screen and (max-width: 900px) {
+    grid-template-columns: 1fr 1fr;
+  }
+  @media screen and (max-width: 586px) {
+    grid-template-columns: 1fr;
+  }
 `;

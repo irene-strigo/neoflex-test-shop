@@ -7,15 +7,19 @@ import {
   ProductPrice,
 } from './CommonStyles';
 import AddToCartButton from './AddToCartButton';
+import { Cart, setCart } from '../Storage';
+
 type Props = {
+  id: number;
   img: string;
   title: string;
   price: string;
   rate: string;
   isInCart?: boolean;
   isInFavorites?: boolean;
+  setInCart: React.Dispatch<React.SetStateAction<Cart>>;
 };
-const ProductCard = ({ img, title, price, rate }: Props) => {
+const ProductCard = ({ img, title, price, rate, id, setInCart }: Props) => {
   return (
     <ProductCardContainer>
       <ProductImage src={img} alt="product image"></ProductImage>
@@ -33,7 +37,7 @@ const ProductCard = ({ img, title, price, rate }: Props) => {
           <AddToCartButton
             onClick={(e) => {
               e.preventDefault();
-              console.log('action');
+              setInCart(setCart(id, 1));
             }}
             label={'Купить'}
           />
